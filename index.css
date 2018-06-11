@@ -1,0 +1,171 @@
+body{
+  max-width: 1920px;
+  margin: auto;
+  font-family: 'Alegreya Sans', sans-serif;
+  text-align: center;
+}
+h1,h2,h3,h4,h5,h6,p,ul,li{
+  margin: 0;
+  padding: 0;
+}
+h2{
+  font-size: 35px;
+}
+#happy{
+  font-size: 50px;
+}
+#age{
+  font-size: 35px;
+}
+#first{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(to top right,#67b6f9, #67e1f9);
+}
+#first-grid{
+  display: grid;
+  margin-top: 7%;
+  margin-bottom: 10%;
+  grid-template-rows: 200px 110px;
+  justify-content: center;
+  animation-name: fadeIn;
+  animation-duration: 4s;
+}
+#cake{
+  width: 35%;
+  justify-self: center;
+}
+#pmain{
+  grid-area: 2 / 1 / 2 / 1;
+}
+
+/* Second */
+
+#second{
+  display: grid;
+  padding-top: 20px;
+  width: 100%;
+  height: 800px;
+  background: linear-gradient(to top right,#67b6f9, #67e1f9);
+  grid-row-gap: 40px;
+  grid-template-rows: 50px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#skills{
+  grid-area: 1 / 1 / 1 / 4;
+}
+.skill1{
+  grid-area: 2 / 1 / 2/ 1;
+  opacity: 0;
+}
+.js-skill-animate{
+  opacity: 1;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+}
+.skill2{
+  grid-area: 2 / 2 / 2/ 2;
+  opacity: 0;
+}
+.js-skill2-animate{
+  opacity: 1;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+}
+.skill3{
+  grid-area: 2 / 3 / 2/ 3;
+  opacity: 0;
+}
+.js-skill3-animate{
+  opacity: 1;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+}
+.str{
+   width:150px;
+   border: 1px solid black;
+   border-radius: 50%;
+}
+.strong{
+  margin-top: 40px;
+}
+.skil{
+  margin-top: 25px;
+}
+#third{
+  display: grid;
+  padding-top: 20px;
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(to top right,#67f9c5, #45e6ad);
+  grid-row-gap: 40px;
+  grid-template-rows: 50px 1fr;
+  align-items: flex-start;
+}
+#nn{
+  justify-self:flex-start;
+  margin-left: 20px;
+  width: 100%;
+  height: 100%;
+}
+#n1{
+  display: flex;
+  width: 100%;
+  height: 150px;
+  align-items: center;
+}
+#n2{
+  display: flex;
+  width: 100%;
+  height: 150px;
+  align-items: center;
+  margin-top: 20px;
+}
+#n3{
+  display: flex;
+  width: 100%;
+  height: 150px;
+  align-items: center;
+  margin-top: 20px;
+}
+.img{
+  width: 30%;
+}
+.wishes{
+  float: right;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
